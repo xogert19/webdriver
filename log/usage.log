@@ -1,0 +1,24 @@
+{"level":"info","message":"Reading configs from C:\\Users\\qq\\works\\aaa\\webdriver\\browserstack.yml","timestamp":"2022-11-20T16:13:22.025Z"}
+{"level":"info","message":"Local binary started successfully","timestamp":"2022-11-20T16:13:27.273Z"}
+{"level":"info","message":"Running your mocha tests across 1 platforms","timestamp":"2022-11-20T16:13:27.283Z"}
+{"level":"info","message":"Now, showing logs from mocha","timestamp":"2022-11-20T16:13:27.284Z"}
+{"level":"info","message":"Configuring to run tests on BrowserStack","timestamp":"2022-11-20T16:13:28.301Z"}
+{"level":"info","message":"Local binary stopped","timestamp":"2022-11-20T16:14:00.975Z"}
+{"level":"info","message":"Reading configs from C:\\Users\\qq\\works\\aaa\\webdriver\\browserstack.yml","timestamp":"2022-11-20T16:18:50.945Z"}
+{"level":"info","message":"Local binary started successfully","timestamp":"2022-11-20T16:18:55.208Z"}
+{"level":"info","message":"Running your mocha tests across 1 platforms","timestamp":"2022-11-20T16:18:55.218Z"}
+{"level":"info","message":"Now, showing logs from mocha","timestamp":"2022-11-20T16:18:55.218Z"}
+{"level":"info","message":"Configuring to run tests on BrowserStack","timestamp":"2022-11-20T16:18:56.237Z"}
+{"level":"info","message":"Local binary stopped","timestamp":"2022-11-20T16:19:26.135Z"}
+{"level":"info","message":"Reading configs from C:\\Users\\qq\\works\\aaa\\webdriver\\browserstack.yml","timestamp":"2022-11-20T17:01:50.360Z"}
+{"level":"info","message":"Local binary started successfully","timestamp":"2022-11-20T17:01:56.774Z"}
+{"level":"info","message":"Running your mocha tests across 1 platforms","timestamp":"2022-11-20T17:01:56.800Z"}
+{"level":"info","message":"Now, showing logs from mocha","timestamp":"2022-11-20T17:01:56.801Z"}
+{"level":"info","message":"Configuring to run tests on BrowserStack","timestamp":"2022-11-20T17:01:58.720Z"}
+{"level":"info","message":"Local binary stopped","timestamp":"2022-11-20T17:02:28.725Z"}
+{"level":"info","message":"Reading configs from C:\\Users\\qq\\works\\aaa\\webdriver\\browserstack.yml","timestamp":"2022-11-20T17:03:40.861Z"}
+{"level":"info","message":"Local binary started successfully","timestamp":"2022-11-20T17:03:47.285Z"}
+{"level":"info","message":"Running your mocha tests across 1 platforms","timestamp":"2022-11-20T17:03:47.307Z"}
+{"level":"info","message":"Now, showing logs from mocha","timestamp":"2022-11-20T17:03:47.308Z"}
+{"level":"info","message":"Configuring to run tests on BrowserStack","timestamp":"2022-11-20T17:03:49.568Z"}
+{"level":"info","message":"Local binary stopped","timestamp":"2022-11-20T17:04:49.050Z"}

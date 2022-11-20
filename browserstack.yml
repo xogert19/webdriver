@@ -1,0 +1,14 @@
+userName: siarhei_PZnKCE
+accessKey: uC6xmcW8zPMtWKaMB2xR
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+parallelsPerPlatform: 1
+browserstackLocal: true
+buildName: browserstack-build-1
+projectName: BrowserStack Sample
+debug: false
+networkLogs: false
+consoleLogs: errors
