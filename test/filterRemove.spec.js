@@ -14,13 +14,14 @@ describe("Filter items in catalog.", () => {
   const pageUrl = "https://us.jackwolfskin.com/jw/womens/c/033";
 
   beforeEach(async function () {
-    const driver = new webdriver.Builder()
+    this.driver = new webdriver.Builder()
       .usingServer("http://siarhei_PZnKCE:uC6xmcW8zPMtWKaMB2xR@hub-cloud.browserstack.com/wd/hub")
       .withCapabilities({
         ...capabilities,
         ...(capabilities["browser"] && { browserName: capabilities["browser"] }),
       })
       .build();
+
     // this.driver = await new Builder().forBrowser("chrome").build();
 
     await this.driver.manage().window().maximize();
