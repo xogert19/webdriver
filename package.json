@@ -4,22 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xogert19/webdriver.git"
+    "test": "mocha test/**/*.js",
+    "remote-test": "browserstack-node-sdk mocha test/**/*.js --timeout=60000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/xogert19/webdriver/issues"
-  },
-  "homepage": "https://github.com/xogert19/webdriver#readme",
-  "dependencies": {
-    "chai": "^4.3.7",
-    "mocha": "^10.1.0",
-    "selenium-webdriver": "^4.6.1"
+  "devDependencies": {
+    "browserstack-local": "^1.4.8",
+    "selenium-webdriver": "4.2.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "browserstack-node-sdk": "latest"
   }
 }
