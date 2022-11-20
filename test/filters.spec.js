@@ -3,7 +3,7 @@ const { Browser, Builder } = require("selenium-webdriver");
 
 const CatalogPage = require("../pages/CatalogPage");
 
-const { COLORS, SIZES, XPATHES } = require("../contants");
+const { COLORS, SIZES, XPATHES } = require("../constants");
 
 describe("Filter items in catalog.", () => {
   const pageUrl = "https://us.jackwolfskin.com/jw/womens/c/033";
