@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "mocha test/**/*.js"
+    "test": "mocha index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xogert19/webdriver.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xogert19/webdriver/issues"
+  },
+  "homepage": "https://github.com/xogert19/webdriver#readme",
   "dependencies": {
     "chai": "^4.3.7",
     "mocha": "^10.1.0",
