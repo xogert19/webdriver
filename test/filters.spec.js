@@ -13,27 +13,40 @@ describe("Filter items in catalog.", () => {
     await this.driver.manage().window().maximize();
   });
 
+  it("Should add filters.", async function () {
+    const expectedNumberOfFilters = 3;
+
+    const catalogPage = new CatalogPage(this.driver);
+    await catalogPage.openPage(pageUrl);
+
+    await catalogPage.closeCookiePopup();
+
+    await catalogPage.selectFilter(XPATHES[COLORS.BLACK]);
+    await catalogPage.selectFilter(XPATHES[COLORS.BLUE]);
+    await catalogPage.selectFilter(XPATHES[SIZES.M]);
+
+    const numberOfFilters = await catalogPage.countFilters();
+
+    expect(numberOfFilters).to.be.equal(expectedNumberOfFilters);
+  }).timeout(50000);
+
   it("Should remove filters.", async function () {
     const emptyFiltersHTML = "\n ";
 
     const catalogPage = new CatalogPage(this.driver);
     await catalogPage.openPage(pageUrl);
 
-    await catalogPage.closePopup();
+    await catalogPage.closeCookiePopup();
 
     await catalogPage.selectFilter(XPATHES[COLORS.BLUE]);
     await catalogPage.selectFilter(XPATHES[SIZES.XS]);
 
-    const clearAllxpath = '//div[contains(@class, "b--filtered b--desktop")]/div/a';
-    const clearAllFilters = await catalogPage.findByXpath(clearAllxpath);
-    await catalogPage.clickOnElement(clearAllFilters);
+    await catalogPage.clearFilters();
 
-    const filtersDivxpath = '//div[contains(@class, "b--filtered b--desktop")]';
-    const filtersDiv = await catalogPage.findByXpath(filtersDivxpath);
-    const filtersHTML = await filtersDiv.getAttribute("innerHTML");
+    const filtersHTML = await catalogPage.getFiltersHTML();
 
     expect(filtersHTML).to.be.equal(emptyFiltersHTML);
-  }).timeout(100000);
+  }).timeout(50000);
 
   afterEach(async function () {
     await this.driver.quit();
