@@ -49,6 +49,11 @@ describe("Filter items in catalog.", () => {
   }).timeout(50000);
 
   afterEach(async function () {
+    await new Promise((resolve) => {
+      setTimeout(async () => {
+        resolve();
+      }, 100);
+    });
     await this.driver.quit();
   });
 });
